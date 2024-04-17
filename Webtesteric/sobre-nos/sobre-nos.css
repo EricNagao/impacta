@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+.container-aboutUs {
+    display: flex;
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.image-section {
+    flex: 0 0 50%;    
+}
+
+.image-section img {
+    width: 100%; 
+    height: auto;
+  }
+
+  .text-section {
+    flex: 1; /* Allow text section to fill remaining space */
+    padding: 20px;
+    background-color: rgb(254, 255, 255);
+    border-radius: 5px;
+
+  }
+
+.about{
+    border-left: solid;
+    border-left-color: rgb(79, 211, 79);
+
+}
+  
+.aboutus {
+    padding-left: 4%;
+    width: 70%;
+    height: 23%;
+    font-size: 1.6rem;
+
+    color: rgb(79, 211, 79);
+}
+
+
+div .body-text{
+    color: black;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    padding-left: 4%;
+
+}
+
+first .text-section{
+    background-color: #d3d3d3;
+    width: 65%;
+    height: 80%;
+
+}
+
+
+.view-text a {
+    float: right;
+    text-decoration: none;
+    background-color: #c1f5ce;
+    color: #a9a9a9;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    border: green;
+}
+
+div .textabout{
+    font-size: 1.3rem;
+    color: #5e5e5e;
+    width: 80%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.missao-visao {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%; 
+    flex-direction: line; 
+    margin-bottom: 60px;
+    
+}
+
+.missao, .visao {
+    flex: 2; /* Divida o espaço igualmente entre as seções */
+    padding: 10px;
+    border: 30% solid;
+        color: #d3d3d3;
+
+  }
+
+.missao-visao input[type="radio"] {
+    display: none;
+
+    
+}
+
+.missao-visao label {
+    display: flex;
+    flex-direction: line;
+    margin-right: 20px;
+    border: 30px solid rgb(144, 239, 144);; /* Cria uma borda vermelha de 5px */
+    cursor: pointer; 
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: rgb(144, 239, 144);
+    margin: auto;
+    border: 10px solid rgb(144, 239, 144);; /* Cria uma borda vermelha de 5px */
+
+    
+
+}
+
+.missao-content, .visao-content {
+    display: none;
+    padding: 10px;
+
+    
+  }
+  
+  #missao:checked ~ #missao-content,
+  #visao:checked ~ #visao-content {
+    display: block; 
+    
+  }
+  
+

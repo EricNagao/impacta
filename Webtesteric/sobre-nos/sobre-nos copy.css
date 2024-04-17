@@ -1,0 +1,69 @@
+/* Reset default margins for a cleaner layout */
+* {
+    margin: 0;
+  }
+  
+  .container-aboutUs {
+    display: flex;
+    width: 100%; /* Stretch container across entire width */
+    margin: 0 auto; /* Center content horizontally */
+  }
+  
+  .image-section {
+    flex: 0 0 50%; /* Set image section to fixed 50% width */
+  }
+  
+  .image-section img {
+    width: 100%; /* Ensure image fills available space */
+    height: auto; /* Maintain image aspect ratio */
+  }
+  
+  .text-section.aboutus {
+    flex: 1; /* Allow text section to fill remaining space */
+    padding: 20px;
+    background-color: rgb(254, 255, 255); /* Light background for text section */
+    border: 1px solid green; /* Green border around text section */
+    border-radius: 5px; /* Rounded corners for a smoother look */
+  }
+  
+  .aboutus h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .body-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .textabout {
+    font-size: 1rem;
+    color: #5e5e5e;
+  }
+  
+  .missao-visao {
+    display: flex; /* Arrange radio buttons and labels horizontally */
+    margin-bottom: 20px;
+  }
+  
+  .missao-visao input[type="radio"] {
+    display: none; /* Hide radio buttons visually */
+  }
+  
+  .missao-visao label {
+    cursor: pointer; /* Indicate clickable behavior */
+    margin-right: 10px; /* Add spacing between labels */
+    font-weight: bold;
+  }
+  
+  .missao-content, .visao-content {
+    display: none; /* Initially hide both content sections */
+    padding: 10px;
+  }
+  
+  /* Style for selected content based on radio button state */
+  #missao:checked ~ #missao-content,
+  #visao:checked ~ #visao-content {
+    display: block; /* Show content for the selected radio button */
+  }
+  
